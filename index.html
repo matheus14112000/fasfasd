@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>AC3 - Criação de Formulários</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    </head>
+    <body>  
+        <!--CONTATO-->
+        <form action="" method="post">
+            <fieldset>
+                <legend style="font-family: Impact; font-size: 40px">CONTATO</legend>
+                <font size="5px" face="Verdana" >
+                <!--NOME-->
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" id="nome" required="" maxlength="100"><br><br>
+                <!--EMAIL-->
+                <label for="email">E-mail do remetente:</label><br>
+                <input type="email" id="email" required="" maxlength="100"><br><br>
+                <!--ASSUNTO MENSAGEM-->
+                <label for="assuntomsg">Assunto da mensagem:</label>
+                <input type="radio" name="assuntomsg" value="bug"  required="">Bug
+                <input type="radio" name="assuntomsg" value="reclamacoes" required="">Reclamações
+                <input type="radio" name="assuntomsg" value="sugestoes" required="">Sugestões<br><br>
+                <!--TEXTO MENSAGEM-->
+                <label for="textomsg">Texto da mensagem:</label><br>
+                <textarea id="textomsg" required=""></textarea><br><br>
+                <!--PALAVRAS CHAVE-->
+                <label for="palavraschave">Palavras-chave:</label>
+                <input type="checkbox" name="palavraschave" value="problemas">Problemas
+                <input type="checkbox" name="palavraschave" value="tecnologia">Tecnologia
+                <input type="checkbox" name="palavraschave" value="impacta">Impacta
+                <input type="checkbox" name="palavraschave" value="email">Email
+                <input type="checkbox" name="palavraschave" value="contato">Contato<br><br>
+                <!--ENVIAR-->
+                <input type="submit" name="Enviar">
+                </font>
+            </fieldset><br><br> 
+        </form>
+
+        <!--CADASTRO ALUNO-->
+        <form action="" method="post">
+            <fieldset> 
+                <legend style="font-family: Impact; font-size: 40px">CADASTRO ALUNO</legend>
+                <font size="5px" face="Verdana">
+                <!--NOME-->
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" required="" maxlength="100"><br><br>
+                <!--IDADE NAO CONSIGO LIMITAR-->
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" required="" max="99"><br><br>
+                <!--SEXO-->
+                <label for="sexo">Sexo:</label>
+                <select name="sexo" required="">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>  
+                </select><br><br>
+                <!--CURSO-->
+                <label for="curso">Curso:</label>
+                <input type=radio name="curso" value="ADS" required="">ADS
+                <input type=radio name="curso" value="GTI" required="">GTI
+                <input type=radio name="curso" value="BD" required="">BD<br><br>
+                <!--EMAIL-->
+                <label for="email">Email:</label>
+                <input type="email" id="email" required=""><br><br>
+                <!--TELEFONE NAO CONSIGO LIMITAR-->
+                <label for="telefone">Telefone:</label>
+                <input type="number" placeholder="(DDD e Número)" required=""><br><br>
+                <!--COR CRACHÁ-->
+                <label for="corCracha">Cor do Crachá:</label>
+                <input type="color" id="corcracha"><br><br>
+                <!--LINK GITHUB-->
+                <label for="github">Link do Github:</label>
+                <input type="url" id="github"><br><br>
+                <!--DATA DE INGRESSO-->
+                <label for="dataIngresso">Data de Ingresso no Curso:</label>
+                <input type="date" id="data"><br><br>
+                 </font>
+                <!--ENVIAR-->
+                <input type="submit" name="Enviar">
+            </fieldset>
+        </form>
+    </body>
+</html>
